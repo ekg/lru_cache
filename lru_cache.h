@@ -63,7 +63,7 @@ template<typename T, typename U>
 struct LRUCache<T, U>::Impl {
     class Node;
 
-    using map_type = std::map<T, Node*>;
+    using map_type = std::unordered_map<T, Node*>;
 
     struct Node {
         Node(U data) : data(data), prev(NULL), next(NULL) {}
