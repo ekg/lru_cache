@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "lru_cache.cc"
+#include "lru_cache.h"
 
 template class LRUCache<std::string, std::string>;
 
