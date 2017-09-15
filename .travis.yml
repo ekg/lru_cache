@@ -1,7 +1,8 @@
-language: cpp
+language:
+        - cpp
 compiler:
-        -gcc
-        -clang
+        - gcc
+        - clang
 script:
-        -make
-        -./test
+        - make
+        - ./test
