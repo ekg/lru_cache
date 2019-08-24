@@ -49,7 +49,7 @@ class LRUCache {
 
   private:
     struct Impl;
-    std::auto_ptr<Impl> impl_;
+    std::unique_ptr<Impl> impl_;
 
     LRUCache(const LRUCache&);
     void operator=(const LRUCache&);
